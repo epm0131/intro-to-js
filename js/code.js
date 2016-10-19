@@ -74,6 +74,13 @@
      // arguments and returns the result of adding them together, mutliplying
      // by 10, then dividing by the first number.
 
+     function math (x,y) {
+
+       var totals = ((x+y)*10)/x;
+       return totals;
+
+     }
+
 
 
      // TODO 7: Write a function called `madlib` that takes 3 separate words as
@@ -81,6 +88,14 @@
      // "I prefer __1__ while I __2__ so that I don't __3__ on the __4__."
      // Finally, the function should return that new sentence.
 
+
+     function madlib (home, sleep, end, street) {
+
+
+       var completeSentence = 'I prefer ' + home + ' while I ' + sleep + ' so that I don\'t ' + end + ' on the ' + street + '.';
+       return completeSentence;
+
+     }
 
 
      /* ***************************************************************
@@ -95,8 +110,11 @@
      // a string provided as an argument. For example, reverse("jag testar")
      // should return the string "ratset gaj".
 
+     function reverse(str) {
+       return str.split('').reverse().join('');
 
-
+     }
+     console.log(reverse('Jordan is awesome'));
      // TODO 9: Write a function called `translate` that will translate text
      // passed in as an argument into "Rovarspraket". "Rovarspraket" is a new
      // language where you double every consonant and place an "o" in between.
