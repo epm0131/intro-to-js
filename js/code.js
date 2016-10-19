@@ -17,26 +17,39 @@
      // your first name.
      // Also DECLARE (but do not instantiate) a `lastName` variable.
 
-     
+     var firstName = "Ettore";
+     var lastName
 
      // TODO 2: Create a `greeting` variable as a string which says:
      //    "Hello there _____!"
      // Replace the _____ above with the value of the `firstName` variable.
      // NOTE: Do NOT simply retype your first name in the `greeting` value.
 
-
+     var greeting = "Hello there "+ firstName + '!';
 
      // TODO 3: Create two variables: one for the year you were born, and one
      // for the current year. Then create a third variable to store your age!
      // Name these: `birthYear`, `currentYear`, and `age`
 
+     var birthYear = 1986;
+     var currentYear = 2016;
+     var age = currentYear - birthYear;
 
 
      // TODO 4: Create a new variable called `style` - if your age is under 35,
      // store "hip" in this variable, but if your age is 35 or over, store
      // "classic" in this variable.
 
+     var style
 
+     if (age < 35) {
+       style = 'hip';
+
+     }
+     else {
+       syle = 'classic';
+
+     };
 
      // TODO 5: Create a variable indicating that your instructor is awesome
      // and call it `instructorIsAwesome`. This variable should be a boolean
@@ -44,6 +57,17 @@
      // Next, create a variable called `review` and, if the instructor is
      // awesome, set `review` to "good", otherwise set the `review` variable to "bad"
 
+     var instructorIsAwesome = true;
+     var review
+
+     if (review = instructorIsAwesome) {
+        review = 'good';
+     }
+
+     else {
+       review = 'bad';
+
+     };
 
 
      // TODO 6: Create a function called `math` which accepts to numbers as
